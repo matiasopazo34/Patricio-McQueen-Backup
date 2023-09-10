@@ -1,0 +1,47 @@
+***********************************************************************************************
+                                         ### APUNTE ###
+***********************************************************************************************
+
+### CONEXIONES
+
+$ ssh -X duckiebot@duckiebot.local // conectarse al duckiebot
+$ code // abrir VisualStudio
+
+### PARA ABRIR WIFI
+
+$ source vehicle_name.sh
+$ ./hotspot.sh on
+
+
+### MANIPULAR REPOSITORIOS
+
+(en repositorio training_pkg)
+sync fork -> git push -> git pull
+
+
+### CONVERTIR ARCHIVO EN EJECUTABLE
+
+$ chmod -x ./"arcchivo".algo
+$ rosrun "archivo".algo
+
+****TODOS LOS NODOS ESTÁN EN /duckietown/catkin_ws/src/ros_cap/src******
+
+### COMANDOS ROS
+
+$ roscore // ejecuta ros
+
+$ roslaunch ros_cap duckie_core.launch veh:=duckiebot // empezar ros en duckiebot
+
+$ rostopic list // lista de tópicos
+$ rostopic echo <nombre del tópico> // ver actualizaciones de un tópico
+$ rosrun <directorio> <archivo.py> // ejecutar .py
+$ python <archivo.py> // ejecutar.py 
+
+*** visualizar nodo de la cámara
+$ export ROS_MASTER_URI=http://duckiebot.local:11311
+$ rpg_image_view
+
+
+
+
+
